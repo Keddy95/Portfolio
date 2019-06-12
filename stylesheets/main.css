@@ -1,0 +1,210 @@
+/*****STILE GENERALE*****/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.active{
+	background: green;
+	border-radius: 3px;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.title{
+	font-size: 2.2rem;
+}
+
+main{
+	min-height: calc(100vh - 183.69px - 144px);
+}
+/*********ABOUT*********/
+
+#about img{
+	border-radius: 20px;
+	padding: 25px 0;
+}
+#about .profile-pic{
+	text-align: center;
+}
+/********HEAD**********/
+
+header {
+	background: red;
+	text-align: center;
+}
+
+header .logo-container{
+	padding: 20px 20px 0px 20px;
+	margin: 0;
+}
+
+header img{
+	width: 120px;
+}
+
+/***********MENù NAVIGAZIONE***********/
+nav {
+	background: #b30000;
+	padding: 10px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: white;
+	font-family: Arial, Times, serif;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+nav li{
+	display: inline-block;
+}
+
+/*********GALLERY*********/
+
+#gallery{
+	padding-top:  15px;
+	padding-bottom: 15px;
+}
+
+#gallery img{
+	width: 100%;
+}
+
+#gallery .iteam:nth-child(2n+1){
+	clear: left;
+}
+
+#gallery .item{
+	width: 50%;
+	float: left;
+	padding: 15px;
+}
+
+#gallery .caption p{
+	background: #ffff00;
+	padding: 3px;
+	margin: 0;
+}
+
+#gallery .picture{
+	line-height: 0;
+}
+
+/**********CONTACT*******/
+#contact ul{
+	list-style-type: none;
+	padding: 0;
+}
+#contact li{
+	padding: 5px 0;
+}
+
+#contact .material-icons{
+	float: left;
+	padding: 0;
+}
+
+
+#contact .contatti a{
+	margin: 3px 0 0 5px;
+	display: inline-block;
+}
+
+/***********FOOTER************/
+
+footer.main{
+	text-align: center;
+	padding: 15px;
+}
+
+footer.main img{
+	width: 60px;
+}
+
+/***PER SCHERMI CON LARGHEZZA MINIMA DI 768px****/
+@media only screen and (min-width: 768px) {
+	/*********GALLERY*********/
+#gallery .item{
+	width: 33.3333%;
+	}
+#gallery .item:nth-child(3n+1){
+	clear: left;
+}
+
+/*******ABOUT*******/
+
+#about img{
+	width: 70%;
+}
+#about .profile-pic{
+	width: 50%;
+	float:left;
+	padding: 15px;
+	text-align: center;
+}
+#about .description{
+	float:right;
+	width: 50%;
+	padding: 30px 15px 15px;
+}
+
+/******CONTATTI*********/
+#contact .info{
+	float:left;
+	width: 70%;
+	padding: 15px 0px 0px 40px;
+}
+ 
+#contact .contatti{
+	float:right;
+	width: 30%;
+	padding: 15px 0px 0px 30px;
+}
+}
+
+@media only screen and (min-width: 992px) {
+nav li a{
+	transition: background .3s;
+}
+nav li a:hover{
+	background: green;
+	border-radius: 3px;
+}
+#gallery .item:hover{
+	transition : opacity .3s;
+	}
+#gallery .item:hover{
+	opacity: .7;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	#gallery .item:nth-child(3n+1){
+	clear: left;
+}
+	}	
